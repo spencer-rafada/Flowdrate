@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0B18EDB2906D6D9002080F4 /* FlowdrateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B18EDA2906D6D9002080F4 /* FlowdrateApp.swift */; };
+		A0B18EDD2906D6D9002080F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B18EDC2906D6D9002080F4 /* ContentView.swift */; };
+		A0B18EDF2906D6DB002080F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B18EDE2906D6DB002080F4 /* Assets.xcassets */; };
+		A0B18EE22906D6DB002080F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B18EE12906D6DB002080F4 /* Preview Assets.xcassets */; };
+		A0B18EEC2906D6DC002080F4 /* FlowdrateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B18EEB2906D6DC002080F4 /* FlowdrateTests.swift */; };
+		A0B18EF62906D6DC002080F4 /* FlowdrateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B18EF52906D6DC002080F4 /* FlowdrateUITests.swift */; };
+		A0B18EF82906D6DC002080F4 /* FlowdrateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B18EF72906D6DC002080F4 /* FlowdrateUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0B18EE82906D6DC002080F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0B18ECF2906D6D9002080F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0B18ED62906D6D9002080F4;
+			remoteInfo = Flowdrate;
+		};
+		A0B18EF22906D6DC002080F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0B18ECF2906D6D9002080F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0B18ED62906D6D9002080F4;
+			remoteInfo = Flowdrate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0B18ED72906D6D9002080F4 /* Flowdrate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flowdrate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0B18EDA2906D6D9002080F4 /* FlowdrateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowdrateApp.swift; sourceTree = "<group>"; };
+		A0B18EDC2906D6D9002080F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A0B18EDE2906D6DB002080F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0B18EE12906D6DB002080F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A0B18EE72906D6DC002080F4 /* FlowdrateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowdrateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0B18EEB2906D6DC002080F4 /* FlowdrateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowdrateTests.swift; sourceTree = "<group>"; };
+		A0B18EF12906D6DC002080F4 /* FlowdrateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowdrateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0B18EF52906D6DC002080F4 /* FlowdrateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowdrateUITests.swift; sourceTree = "<group>"; };
+		A0B18EF72906D6DC002080F4 /* FlowdrateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowdrateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0B18ED42906D6D9002080F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B18EE42906D6DC002080F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B18EEE2906D6DC002080F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0B18ECE2906D6D9002080F4 = {
+			isa = PBXGroup;
+			children = (
+				A0B18ED92906D6D9002080F4 /* Flowdrate */,
+				A0B18EEA2906D6DC002080F4 /* FlowdrateTests */,
+				A0B18EF42906D6DC002080F4 /* FlowdrateUITests */,
+				A0B18ED82906D6D9002080F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0B18ED82906D6D9002080F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0B18ED72906D6D9002080F4 /* Flowdrate.app */,
+				A0B18EE72906D6DC002080F4 /* FlowdrateTests.xctest */,
+				A0B18EF12906D6DC002080F4 /* FlowdrateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0B18ED92906D6D9002080F4 /* Flowdrate */ = {
+			isa = PBXGroup;
+			children = (
+				A0B18EDA2906D6D9002080F4 /* FlowdrateApp.swift */,
+				A0B18EDC2906D6D9002080F4 /* ContentView.swift */,
+				A0B18EDE2906D6DB002080F4 /* Assets.xcassets */,
+				A0B18EE02906D6DB002080F4 /* Preview Content */,
+			);
+			path = Flowdrate;
+			sourceTree = "<group>";
+		};
+		A0B18EE02906D6DB002080F4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A0B18EE12906D6DB002080F4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A0B18EEA2906D6DC002080F4 /* FlowdrateTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0B18EEB2906D6DC002080F4 /* FlowdrateTests.swift */,
+			);
+			path = FlowdrateTests;
+			sourceTree = "<group>";
+		};
+		A0B18EF42906D6DC002080F4 /* FlowdrateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A0B18EF52906D6DC002080F4 /* FlowdrateUITests.swift */,
+				A0B18EF72906D6DC002080F4 /* FlowdrateUITestsLaunchTests.swift */,
+			);
+			path = FlowdrateUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0B18ED62906D6D9002080F4 /* Flowdrate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0B18EFB2906D6DC002080F4 /* Build configuration list for PBXNativeTarget "Flowdrate" */;
+			buildPhases = (
+				A0B18ED32906D6D9002080F4 /* Sources */,
+				A0B18ED42906D6D9002080F4 /* Frameworks */,
+				A0B18ED52906D6D9002080F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flowdrate;
+			productName = Flowdrate;
+			productReference = A0B18ED72906D6D9002080F4 /* Flowdrate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0B18EE62906D6DC002080F4 /* FlowdrateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0B18EFE2906D6DC002080F4 /* Build configuration list for PBXNativeTarget "FlowdrateTests" */;
+			buildPhases = (
+				A0B18EE32906D6DC002080F4 /* Sources */,
+				A0B18EE42906D6DC002080F4 /* Frameworks */,
+				A0B18EE52906D6DC002080F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0B18EE92906D6DC002080F4 /* PBXTargetDependency */,
+			);
+			name = FlowdrateTests;
+			productName = FlowdrateTests;
+			productReference = A0B18EE72906D6DC002080F4 /* FlowdrateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0B18EF02906D6DC002080F4 /* FlowdrateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0B18F012906D6DC002080F4 /* Build configuration list for PBXNativeTarget "FlowdrateUITests" */;
+			buildPhases = (
+				A0B18EED2906D6DC002080F4 /* Sources */,
+				A0B18EEE2906D6DC002080F4 /* Frameworks */,
+				A0B18EEF2906D6DC002080F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0B18EF32906D6DC002080F4 /* PBXTargetDependency */,
+			);
+			name = FlowdrateUITests;
+			productName = FlowdrateUITests;
+			productReference = A0B18EF12906D6DC002080F4 /* FlowdrateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0B18ECF2906D6D9002080F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					A0B18ED62906D6D9002080F4 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					A0B18EE62906D6DC002080F4 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = A0B18ED62906D6D9002080F4;
+					};
+					A0B18EF02906D6DC002080F4 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = A0B18ED62906D6D9002080F4;
+					};
+				};
+			};
+			buildConfigurationList = A0B18ED22906D6D9002080F4 /* Build configuration list for PBXProject "Flowdrate" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0B18ECE2906D6D9002080F4;
+			productRefGroup = A0B18ED82906D6D9002080F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0B18ED62906D6D9002080F4 /* Flowdrate */,
+				A0B18EE62906D6DC002080F4 /* FlowdrateTests */,
+				A0B18EF02906D6DC002080F4 /* FlowdrateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0B18ED52906D6D9002080F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0B18EE22906D6DB002080F4 /* Preview Assets.xcassets in Resources */,
+				A0B18EDF2906D6DB002080F4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B18EE52906D6DC002080F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B18EEF2906D6DC002080F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0B18ED32906D6D9002080F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0B18EDD2906D6D9002080F4 /* ContentView.swift in Sources */,
+				A0B18EDB2906D6D9002080F4 /* FlowdrateApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B18EE32906D6DC002080F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0B18EEC2906D6DC002080F4 /* FlowdrateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B18EED2906D6DC002080F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0B18EF62906D6DC002080F4 /* FlowdrateUITests.swift in Sources */,
+				A0B18EF82906D6DC002080F4 /* FlowdrateUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0B18EE92906D6DC002080F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0B18ED62906D6D9002080F4 /* Flowdrate */;
+			targetProxy = A0B18EE82906D6DC002080F4 /* PBXContainerItemProxy */;
+		};
+		A0B18EF32906D6DC002080F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0B18ED62906D6D9002080F4 /* Flowdrate */;
+			targetProxy = A0B18EF22906D6DC002080F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A0B18EF92906D6DC002080F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0B18EFA2906D6DC002080F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0B18EFC2906D6DC002080F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Flowdrate/Preview Content\"";
+				DEVELOPMENT_TEAM = 8974NPBSUQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "spencer-rafada.Flowdrate";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0B18EFD2906D6DC002080F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Flowdrate/Preview Content\"";
+				DEVELOPMENT_TEAM = 8974NPBSUQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "spencer-rafada.Flowdrate";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0B18EFF2906D6DC002080F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8974NPBSUQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "spencer-rafada.FlowdrateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flowdrate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Flowdrate";
+			};
+			name = Debug;
+		};
+		A0B18F002906D6DC002080F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8974NPBSUQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "spencer-rafada.FlowdrateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flowdrate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Flowdrate";
+			};
+			name = Release;
+		};
+		A0B18F022906D6DC002080F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8974NPBSUQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "spencer-rafada.FlowdrateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Flowdrate;
+			};
+			name = Debug;
+		};
+		A0B18F032906D6DC002080F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8974NPBSUQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "spencer-rafada.FlowdrateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Flowdrate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0B18ED22906D6D9002080F4 /* Build configuration list for PBXProject "Flowdrate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0B18EF92906D6DC002080F4 /* Debug */,
+				A0B18EFA2906D6DC002080F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0B18EFB2906D6DC002080F4 /* Build configuration list for PBXNativeTarget "Flowdrate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0B18EFC2906D6DC002080F4 /* Debug */,
+				A0B18EFD2906D6DC002080F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0B18EFE2906D6DC002080F4 /* Build configuration list for PBXNativeTarget "FlowdrateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0B18EFF2906D6DC002080F4 /* Debug */,
+				A0B18F002906D6DC002080F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0B18F012906D6DC002080F4 /* Build configuration list for PBXNativeTarget "FlowdrateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0B18F022906D6DC002080F4 /* Debug */,
+				A0B18F032906D6DC002080F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0B18ECF2906D6D9002080F4 /* Project object */;
+}
