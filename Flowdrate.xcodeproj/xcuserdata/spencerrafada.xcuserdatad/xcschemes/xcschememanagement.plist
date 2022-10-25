@@ -6,8 +6,33 @@
 	<dict>
 		<key>Flowdrate.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>A0B18ED62906D6D9002080F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A0B18EE62906D6DC002080F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A0B18EF02906D6DC002080F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A0E2CD6629072CA80061DDBF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

@@ -11,7 +11,7 @@ import SwiftUI
 struct FlowdrateApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView()
         }
     }
 }
