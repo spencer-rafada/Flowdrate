@@ -28,6 +28,25 @@ extension FlowView {
             self.isActive = true
             self.endDate = Calendar.current.date(byAdding: .minute, value: Int(minutes), to: endDate)!
             
+            
+            /* Notification */
+            let calendar = Calendar.current
+            var date = DateComponents()
+            date.hour = calendar.component(.hour, from: endDate)
+            date.minute = calendar.component(.minute, from: endDate)
+            date.second = calendar.component(.second, from: endDate)
+            //print(date)
+            
+            let content = UNMutableNotificationContent()
+            content.title = "Flow Timer is up! Good job!"
+            content.subtitle = "Take a quick break and go again."
+            content.sound = UNNotificationSound.default
+            
+            let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: false)
+            
+            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+            
+            UNUserNotificationCenter.current().add(request)
         }
         
         /* func pauseResume() {
@@ -58,6 +77,8 @@ extension FlowView {
             let calendar = Calendar.current
             let minutes = calendar.component(.minute, from: date)
             let seconds = calendar.component(.second, from: date)
+            
+            print(time)
             
             self.minutes = Float(minutes)
             self.time = String(format: "%d:%02d", minutes, seconds)

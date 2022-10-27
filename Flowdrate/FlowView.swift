@@ -26,6 +26,11 @@ struct FlowView: View {
                     .cornerRadius(20)
                     .overlay(RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.teal, lineWidth: 4))
+                    .alert("Timer is up!", isPresented: $fm.showingAlert) {
+                        Button("Continue", role: .cancel) {
+                            
+                        }
+                    }
                 
                 Slider(value: $fm.minutes, in:  1...60, step: 1)
                     .padding()
