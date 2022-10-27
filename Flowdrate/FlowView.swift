@@ -15,7 +15,7 @@ struct FlowView: View {
     
     var body: some View {
         VStack {
-            Text("Flow Productivity")
+            Text("Flow Pomodoro Clock")
                 .font(.headline)
             VStack {
                 Text("\(fm.time)")
@@ -26,10 +26,10 @@ struct FlowView: View {
                     .cornerRadius(20)
                     .overlay(RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.teal, lineWidth: 4))
-                    .alert("Timer is up!", isPresented: $fm.showingAlert) {
-                        Button("Continue", role: .cancel) {
-                            
-                        }
+                    .alert(isPresented: $fm.showingAlert) {
+                        Alert(title: Text("Good job being productive!"),
+                              message: Text("Have a quick break!"),
+                              dismissButton: .default(Text("Got it!")))
                     }
                 
                 Slider(value: $fm.minutes, in:  1...60, step: 1)
