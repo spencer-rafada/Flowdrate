@@ -55,6 +55,7 @@
 		A00380402906F3720036AB86 /* FlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowView.swift; sourceTree = "<group>"; };
 		A00380442906F5B30036AB86 /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
 		A02531E1290A34A2003C2D64 /* DrinkWaterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkWaterModel.swift; sourceTree = "<group>"; };
+		A02531E3290A3F36003C2D64 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A0A7809129088D4700BAAD69 /* DrinkWaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkWaterView.swift; sourceTree = "<group>"; };
 		A0B18ED72906D6D9002080F4 /* Flowdrate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flowdrate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B18EDA2906D6D9002080F4 /* FlowdrateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowdrateApp.swift; sourceTree = "<group>"; };
@@ -108,6 +109,7 @@
 		A0B18ECE2906D6D9002080F4 = {
 			isa = PBXGroup;
 			children = (
+				A02531E3290A3F36003C2D64 /* README.md */,
 				A0B18ED92906D6D9002080F4 /* Flowdrate */,
 				A0B18EEA2906D6DC002080F4 /* FlowdrateTests */,
 				A0B18EF42906D6DC002080F4 /* FlowdrateUITests */,
