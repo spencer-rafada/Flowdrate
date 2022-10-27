@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UserNotifications
 
 extension FlowView {
     final class FlowModel: ObservableObject {
@@ -26,7 +27,13 @@ extension FlowView {
             self.endDate = Date()
             self.isActive = true
             self.endDate = Calendar.current.date(byAdding: .minute, value: Int(minutes), to: endDate)!
+            
         }
+        
+        /* func pauseResume() {
+            self.isActive = false
+            
+        } */
         
         func reset() {
             self.minutes = Float(initialTime)

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A00380412906F3720036AB86 /* FlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00380402906F3720036AB86 /* FlowView.swift */; };
 		A00380452906F5B30036AB86 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00380442906F5B30036AB86 /* TimerModel.swift */; };
+		A02531E2290A34A2003C2D64 /* DrinkWaterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02531E1290A34A2003C2D64 /* DrinkWaterModel.swift */; };
+		A0A7809229088D4700BAAD69 /* DrinkWaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A7809129088D4700BAAD69 /* DrinkWaterView.swift */; };
 		A0B18EDB2906D6D9002080F4 /* FlowdrateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B18EDA2906D6D9002080F4 /* FlowdrateApp.swift */; };
 		A0B18EDF2906D6DB002080F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B18EDE2906D6DB002080F4 /* Assets.xcassets */; };
 		A0B18EE22906D6DB002080F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B18EE12906D6DB002080F4 /* Preview Assets.xcassets */; };
@@ -16,7 +18,7 @@
 		A0B18EF62906D6DC002080F4 /* FlowdrateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B18EF52906D6DC002080F4 /* FlowdrateUITests.swift */; };
 		A0B18EF82906D6DC002080F4 /* FlowdrateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B18EF72906D6DC002080F4 /* FlowdrateUITestsLaunchTests.swift */; };
 		A0B18F052906DEE6002080F4 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B18F042906DEE6002080F4 /* WelcomeView.swift */; };
-		A0B18F072906E4E3002080F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B18F062906E4E3002080F4 /* ContentView.swift */; };
+		A0B18F072906E4E3002080F4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B18F062906E4E3002080F4 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 /* Begin PBXFileReference section */
 		A00380402906F3720036AB86 /* FlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowView.swift; sourceTree = "<group>"; };
 		A00380442906F5B30036AB86 /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		A02531E1290A34A2003C2D64 /* DrinkWaterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkWaterModel.swift; sourceTree = "<group>"; };
+		A0A7809129088D4700BAAD69 /* DrinkWaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkWaterView.swift; sourceTree = "<group>"; };
 		A0B18ED72906D6D9002080F4 /* Flowdrate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flowdrate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B18EDA2906D6D9002080F4 /* FlowdrateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowdrateApp.swift; sourceTree = "<group>"; };
 		A0B18EDE2906D6DB002080F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,7 +66,7 @@
 		A0B18EF52906D6DC002080F4 /* FlowdrateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowdrateUITests.swift; sourceTree = "<group>"; };
 		A0B18EF72906D6DC002080F4 /* FlowdrateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowdrateUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A0B18F042906DEE6002080F4 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		A0B18F062906E4E3002080F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A0B18F062906E4E3002080F4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A0E2CD6929072CA80061DDBF /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		A0E2CD6B29072CA90061DDBF /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -96,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				A00380442906F5B30036AB86 /* TimerModel.swift */,
+				A02531E1290A34A2003C2D64 /* DrinkWaterModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -127,7 +132,8 @@
 				A00380432906F5A70036AB86 /* Models */,
 				A0B18EDA2906D6D9002080F4 /* FlowdrateApp.swift */,
 				A0B18F042906DEE6002080F4 /* WelcomeView.swift */,
-				A0B18F062906E4E3002080F4 /* ContentView.swift */,
+				A0B18F062906E4E3002080F4 /* HomeView.swift */,
+				A0A7809129088D4700BAAD69 /* DrinkWaterView.swift */,
 				A00380402906F3720036AB86 /* FlowView.swift */,
 				A0B18EDE2906D6DB002080F4 /* Assets.xcassets */,
 				A0B18EE02906D6DB002080F4 /* Preview Content */,
@@ -302,9 +308,11 @@
 			files = (
 				A00380412906F3720036AB86 /* FlowView.swift in Sources */,
 				A0B18EDB2906D6D9002080F4 /* FlowdrateApp.swift in Sources */,
+				A02531E2290A34A2003C2D64 /* DrinkWaterModel.swift in Sources */,
 				A00380452906F5B30036AB86 /* TimerModel.swift in Sources */,
+				A0A7809229088D4700BAAD69 /* DrinkWaterView.swift in Sources */,
 				A0B18F052906DEE6002080F4 /* WelcomeView.swift in Sources */,
-				A0B18F072906E4E3002080F4 /* ContentView.swift in Sources */,
+				A0B18F072906E4E3002080F4 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

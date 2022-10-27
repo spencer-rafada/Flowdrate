@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import UserNotifications
 
 struct FlowView: View {
     @StateObject private var fm = FlowModel()
@@ -27,11 +26,7 @@ struct FlowView: View {
                     .cornerRadius(20)
                     .overlay(RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.teal, lineWidth: 4))
-                    .alert("Timer done!", isPresented: $fm.showingAlert) {
-                        Button("Continue", role: .cancel) {
-                            
-                        }
-                    }
+                
                 Slider(value: $fm.minutes, in:  1...60, step: 1)
                     .padding()
                     .frame(width: width)
@@ -41,12 +36,23 @@ struct FlowView: View {
                 HStack (spacing: 50){
                     Button(action: {fm.start(minutes: fm.minutes)}) {
                         HStack(spacing: 15){
-                            Image(systemName: fm.isActive ? "pause.fill" : "play.fill")
-                            Text(fm.isActive ? "Pause" : "Start")
+                            Image(systemName: "play.fill")
+                            Text("Start")
                         }
                         .tint(.blue)
                     }
                     .disabled(fm.isActive)
+                   
+                    /* Pause Feature
+                    Button(action: {fm.pauseResume()}) {
+                        HStack(spacing: 15){
+                            Image(systemName: "pause.fill")
+                            Text("Pause")
+                        }
+                        .tint(.blue)
+                    }
+                    .disabled(!fm.isActive)
+                     */
                     
                     Button(action: {fm.reset()}) {
                         HStack(spacing: 15) {
@@ -55,16 +61,7 @@ struct FlowView: View {
                         }
                         .tint(.red)
                     }
-                }
-            }
-            .onAppear {
-                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) {
-                    success, error in
-                    if success {
-                        print("All set!")
-                    } else if let error = error {
-                        print(error.localizedDescription)
-                    }
+                    .disabled(!fm.isActive)
                 }
             }
             .onReceive(timer) { _ in
@@ -76,6 +73,8 @@ struct FlowView: View {
 
 struct FlowView_Previews: PreviewProvider {
     static var previews: some View {
-        FlowView()
+        NavigationView {
+            FlowView()
+        }
     }
 }
