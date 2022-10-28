@@ -67,7 +67,7 @@ struct DrinkWaterView: View {
                 Button(action: {wm.setGoal()}) {
                     HStack(spacing: 15){
                         Image(systemName: "star.fill")
-                        Text("Set Goal")
+                        Text("Set Reminder")
                             .italic()
                     }
                     .padding()
@@ -76,8 +76,8 @@ struct DrinkWaterView: View {
                 .tint(.white)
                 .cornerRadius(25)
                 
-                Button(action: {}){
-                    Text("Cancel goal")
+                Button(action: {wm.cancelGoal()}){
+                    Text("Cancel reminder")
                         .italic()
                         .underline()
                         .font(.caption)
@@ -89,10 +89,15 @@ struct DrinkWaterView: View {
             // Display how much bottles left after drinking.
             VStack (spacing: 20){
                 Text("You have \(wm.initialGoal) bottles remaining")
-                    .alert(isPresented: $wm.isGoalDone) {
+                    .alert(isPresented: $wm.isDrinkWater) {
                         Alert(title: Text("Good job drinking your water!"),
-                              message: Text("Go ahead and set a new goal."),
-                              dismissButton: .default(Text("Got it!")))
+                              message: Text("We suggest to set a new goal if you drinked all of your water to continually be reminded."),
+                              primaryButton: .default(Text("Continue to remind me")) {
+                            wm.setNotification()
+                        },
+                              secondaryButton: .cancel(Text("Cancel")){
+                            wm.cancelGoal()
+                        })
                     }
                 Button(action: {wm.drinkWater()}) {
                     Text("I drinked water!")
