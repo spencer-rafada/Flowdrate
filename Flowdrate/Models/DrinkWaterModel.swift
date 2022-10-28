@@ -13,7 +13,30 @@ extension DrinkWaterView {
         @Published var isLimit: Bool = false
         @Published var numberBottles: String = "0"
         @Published var number: Int = 0
-        @Published var message: String = "Hello!"
+        @Published var message: String = ""
+        @Published var notificationFrequency: Double = 0
+        @Published var initialGoal: Int = 0
+        @Published var isGoalDone: Bool = false
+        
+        func cancelGoal() {
+            // Clear notifications
+        }
+        
+        func setGoal() {
+            self.initialGoal = self.number
+        }
+        
+        func drinkWater() {
+            if self.initialGoal <= 1 {
+                self.isGoalDone = true
+                self.initialGoal -= 1
+            } else {
+                self.initialGoal -= 1
+            }
+            if self.initialGoal == -1 {
+                self.initialGoal = 0
+            }
+        }
         
         func increaseBottle() {
             if self.number == 15 {
@@ -39,12 +62,12 @@ extension DrinkWaterView {
         
         func updateMessage(number: Int) {
             switch number {
-            case 0...5:
+            case 1...4:
                 self.message = "Drink a little bit more water. You got this!"
-            case 6...7:
+            case 5...7:
                 self.message = "Not quite there yet..."
             case 8...12:
-                self.message = "You're drinking more than what's recommended."
+                self.message = "More than the average intake, nice."
             case 13...15:
                 self.message = "Good job! Be proud of your self!"
             default:
