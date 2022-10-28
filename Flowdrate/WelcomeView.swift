@@ -20,6 +20,7 @@ struct WelcomeView: View {
         }
         else {
             VStack {
+                Spacer()
                 VStack {
                     Image(systemName: "leaf.circle")
                         .resizable()
@@ -38,6 +39,10 @@ struct WelcomeView: View {
                         self.opacity = 1.0
                     }
                 }
+                Spacer()
+                Label("Spencer Rafada", systemImage: "brain.head.profile")
+                    .font(.caption)
+                    .opacity(0.6)
             }
             .onAppear {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {

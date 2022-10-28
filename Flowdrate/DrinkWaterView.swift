@@ -44,6 +44,7 @@ struct DrinkWaterView: View {
             VStack (spacing: 5) {
                 Text("\(wm.message)")
                     .opacity(0.7)
+                    .tint(.red)
                 HStack {
                     ForEach(0..<wm.number, id: \.self) {_ in
                         Image(systemName: "drop.fill")
