@@ -6,9 +6,7 @@ Flowdrate is a minimalist productivity/lifestyle app. A Pomodoro timer for produ
 
 The purpose for creating this app is to further my knowledge for Mobile App Development, specifically iOS App Development. I am passionate about using technologies created by Apple which led me to use XCode and Swift. As a developer, I constantly use a Pomodoro timer to not lose track of time when I start programming and to keep me focused and productive. Also, reminding yourself to drink water keeps yourself healthy. Creating a Mobile App that does these simple things were my goals for creating this Mobile App.
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the app running and a walkthrough of the code.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Dev Log #1](https://youtu.be/XJPNPceTGmg)
 
 # Development Environment
 
@@ -38,7 +36,6 @@ The purpose for creating this app is to further my knowledge for Mobile App Deve
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
 * Having the timer's state for the whole app (parent) so that it continues to run even if we navigate to other views.
 * Functionality of Drinking Water Feature - wherein a user can set how much water each day. Also, save this data to be viewed for analysis in the future
 * Improve the design of each view.
