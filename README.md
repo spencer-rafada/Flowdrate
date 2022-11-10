@@ -36,6 +36,7 @@ The purpose for creating this app is to further my knowledge for Mobile App Deve
 
 # Future Work
 
-* Having the timer's state for the whole app (parent) so that it continues to run even if we navigate to other views.
-* Functionality of Drinking Water Feature - wherein a user can set how much water each day. Also, save this data to be viewed for analysis in the future
+* ~~Having the timer's state for the whole app (parent) so that it continues to run even if we navigate to other views.~~ (Completed: 11/10/22)
+* ~~Functionality of Drinking Water Feature - wherein a user can set how much water each day. ~~ (Completed: 11/10/22)
+* Also, save this data to be viewed for analysis in the future
 * Improve the design of each view.
