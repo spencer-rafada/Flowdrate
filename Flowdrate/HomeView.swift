@@ -25,6 +25,7 @@ class NotificationManager {
 }
 
 struct HomeView: View {
+    @EnvironmentObject private var vm: DrinkWaterModel
     var body: some View {
         VStack{
             Image(systemName: "leaf.circle")
@@ -59,6 +60,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             HomeView()
+                .environmentObject(DrinkWaterModel())
         }
         .navigationTitle("Home")
     }

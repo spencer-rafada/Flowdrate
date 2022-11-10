@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FlowView: View {
-    @StateObject private var fm = FlowModel()
+    @EnvironmentObject private var fm: FlowModel
     private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     private let width: Double = 250
     
@@ -80,6 +80,7 @@ struct FlowView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             FlowView()
+                .environmentObject(FlowModel())
         }
     }
 }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    @EnvironmentObject private var vm: DrinkWaterModel
     @State private var isActive = false
     @State private var size = 0.8
     @State private var opacity = 0.5
@@ -58,5 +59,6 @@ struct WelcomeView: View {
 struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
         WelcomeView()
+            .environmentObject(DrinkWaterModel())
     }
 }

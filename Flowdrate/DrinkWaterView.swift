@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DrinkWaterView: View {
-    @StateObject private var wm = DrinkWaterModel()
+    @EnvironmentObject private var vm: DrinkWaterModel
     private let width: Double = 250
     var body: some View {
         VStack (spacing: 10) {
@@ -28,25 +28,25 @@ struct DrinkWaterView: View {
                     .tint(.teal)
                     .font(.caption)
                 HStack (spacing: 50) {
-                    Button(action: {wm.decreaseBottle()}) {
+                    Button(action: {vm.decreaseBottle()}) {
                         Image(systemName: "minus")
                     }
-                    .disabled(wm.isZero)
-                    Text("\(wm.numberBottles)")
+                    .disabled(vm.isZero)
+                    Text("\(vm.numberBottles)")
                         .font(.system(size: 80))
-                    Button(action: {wm.increaseBottle()}) {
+                    Button(action: {vm.increaseBottle()}) {
                         Image(systemName: "plus")
                     }
-                    .disabled(wm.isLimit)
+                    .disabled(vm.isLimit)
                 }
             }
             // Display how much water user wants to drink
             VStack (spacing: 5) {
-                Text("\(wm.message)")
+                Text("\(vm.message)")
                     .opacity(0.7)
                     .tint(.red)
                 HStack {
-                    ForEach(0..<wm.number, id: \.self) {_ in
+                    ForEach(0..<vm.number, id: \.self) {_ in
                         Image(systemName: "drop.fill")
                             .foregroundColor(.teal)
                     }
@@ -58,14 +58,14 @@ struct DrinkWaterView: View {
             // Configure notification
             VStack (spacing: 10) {
                 Text("How often do you want to get notified?")
-                Text("Every \(Int(wm.notificationFrequency)) minutes")
+                Text("Every \(Int(vm.notificationFrequency)) minutes")
                     .opacity(0.7)
-                Slider(value: $wm.notificationFrequency, in: 1...60, step: 1)
+                Slider(value: $vm.notificationFrequency, in: 1...60, step: 1)
                     .padding()
                     .frame(width: width)
-                    .animation(.easeInOut, value: wm.notificationFrequency)
+                    .animation(.easeInOut, value: vm.notificationFrequency)
                     .tint(.teal)
-                Button(action: {wm.setGoal()}) {
+                Button(action: {vm.setGoal()}) {
                     HStack(spacing: 15){
                         Image(systemName: "star.fill")
                         Text("Set Reminder")
@@ -77,7 +77,7 @@ struct DrinkWaterView: View {
                 .tint(.white)
                 .cornerRadius(25)
                 
-                Button(action: {wm.cancelGoal()}){
+                Button(action: {vm.cancelGoal()}){
                     Text("Cancel reminder")
                         .italic()
                         .underline()
@@ -89,18 +89,18 @@ struct DrinkWaterView: View {
             Divider()
             // Display how much bottles left after drinking.
             VStack (spacing: 20){
-                Text("You have \(wm.initialGoal) bottles remaining")
-                    .alert(isPresented: $wm.isDrinkWater) {
+                Text("You have \(vm.initialGoal) bottles remaining")
+                    .alert(isPresented: $vm.isDrinkWater) {
                         Alert(title: Text("Good job drinking your water!"),
                               message: Text("We suggest to set a new goal if you drinked all of your water to continually be reminded."),
                               primaryButton: .default(Text("Continue to remind me")) {
-                            wm.setNotification()
+                            vm.setNotification()
                         },
                               secondaryButton: .cancel(Text("Cancel")){
-                            wm.cancelGoal()
+                            vm.cancelGoal()
                         })
                     }
-                Button(action: {wm.drinkWater()}) {
+                Button(action: {vm.drinkWater()}) {
                     Text("I drinked water!")
                 }
                 
@@ -112,5 +112,6 @@ struct DrinkWaterView: View {
 struct DrinkWaterView_Previews: PreviewProvider {
     static var previews: some View {
         DrinkWaterView()
+            .environmentObject(DrinkWaterModel())
     }
 }
